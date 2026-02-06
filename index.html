@@ -8,4 +8,199 @@
 <body>
    <h1>Welcome to Demosite</h1> 
 </body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sweet Scoops Ice Cream</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #fff1eb, #ace0f9);
+      color: #333;
+    }
+
+    header {
+      height: 100vh;
+      background: linear-gradient(
+          rgba(0,0,0,0.3),
+          rgba(0,0,0,0.3)
+        ),
+        url("https://images.unsplash.com/photo-1505252585461-04db1eb84625") center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      color: #fff;
+    }
+
+    header h1 {
+      font-size: 4rem;
+      margin-bottom: 10px;
+      animation: pop 1.2s ease;
+    }
+
+    header p {
+      font-size: 1.3rem;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      padding: 14px 35px;
+      background: #ff6f91;
+      border: none;
+      border-radius: 30px;
+      color: #fff;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: 0.3s;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background: #ff4d6d;
+      transform: scale(1.05);
+    }
+
+    section {
+      padding: 70px 10%;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 50px;
+      color: #ff4d6d;
+    }
+
+    .flavors {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 30px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 20px;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 15px;
+      margin-bottom: 15px;
+    }
+
+    .card h3 {
+      color: #ff6f91;
+      margin-bottom: 10px;
+    }
+
+    .about {
+      background: #fff;
+      border-radius: 30px;
+      padding: 50px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+
+    .about p {
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    footer {
+      background: #ff6f91;
+      color: #fff;
+      text-align: center;
+      padding: 25px;
+      margin-top: 50px;
+    }
+
+    @keyframes pop {
+      0% {
+        transform: scale(0.8);
+        opacity: 0;
+      }
+      100% {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header>
+    <div>
+      <h1>Sweet Scoops 🍦</h1>
+      <p>Happiness Served One Scoop at a Time</p>
+      <a href="#flavors" class="btn">Explore Flavors</a>
+    </div>
+  </header>
+
+  <!-- Flavors Section -->
+  <section id="flavors">
+    <h2 class="section-title">Our Popular Flavors</h2>
+
+    <div class="flavors">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1589712235274-cd43a6f94d1b" alt="Vanilla">
+        <h3>Classic Vanilla</h3>
+        <p>Rich, creamy, and timeless.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1497051788611-2c64812349a9" alt="Chocolate">
+        <h3>Chocolate Dream</h3>
+        <p>For true chocolate lovers.</p>
+      </div>
+
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1624353365286-3f8d62daad51" alt="Strawberry">
+        <h3>Strawberry Bliss</h3>
+        <p>Fresh, fruity, and fun.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section>
+    <h2 class="section-title">About Us</h2>
+    <div class="about">
+      <p>
+        At <strong>Sweet Scoops</strong>, we believe ice cream is more than a dessert —
+        it’s a feeling. Made with love, premium ingredients, and a whole lot of
+        sweetness, our scoops are guaranteed to make you smile 😄
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2026 Sweet Scoops Ice Cream Parlour | Made with 🍨 & ❤️</p>
+  </footer>
+
+</body>
 </html>
